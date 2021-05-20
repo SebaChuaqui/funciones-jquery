@@ -3,6 +3,8 @@ li{
     list-style: none;
 }
 
-.col-4{
+.col-2, .col-3{
+
     display: inline-block;
+    display: flex;
 }
