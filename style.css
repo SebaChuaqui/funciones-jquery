@@ -2,3 +2,8 @@
 li{
     list-style: none;
 }
+
+.col-center{
+    float: none;
+    margin: 0 auto;
+}
