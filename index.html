@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones Jquery</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="row text-center">
+        <div class="col-4">
+            <div class="cuadro" style="width: 288px;">
+                <div class="cuadro-body">
+                    <h4 class="titulo cuadro"> Show - Hide</h4>
+                    <p id="p1" class="texto">Como usar Show-Hide-Toogle</p>
+                </div>
+                <ul class="grupo grupo-list">
+                    <li class="grupo-list-item">
+                        <a id="boton1" class="btn btn-danger">Show</a>
+                        <a id="boton2" class="btn btn-warning">Hide</a>
+                        <a id="boton3" class="btn btn-success">Toggle</a>
+                    </li>
+                </ul>
+                <ul>
+                    <img id="imagen1" src="imagenes/matrix.jpg" class="imagen-top" alt="matrix">
+                </ul>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="cuadro" style="width: 288px;">
+                <div class="cuadro-body">
+                    <h4 class="titulo cuadro"> Slide Down - Slide Up</h4>
+                    <p id="p1" class="texto">Como usar Slide Down-Up-Toogle</p>
+                </div>
+                <ul class="grupo grupo-list">
+                    <li class="grupo-list-item">
+                        <a id="boton4" class="btn btn-danger">Down</a>
+                        <a id="boton5" class="btn btn-warning">Up</a>
+                        <a id="boton6" class="btn btn-success">Toggle</a>
+                    </li>
+                </ul>
+                <ul>
+                    <img id="imagen2" src="imagenes/matrix.jpg" class="imagen-top" alt="matrix">
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="cuadro" style="width: 288px;">
+                <div class="cuadro-body">
+                    <h4 class="titulo cuadro"> Fade In - Fade Out</h4>
+                    <p id="p1" class="texto">Como usar Fade In-Out-Toogle</p>
+                </div>
+                <ul class="grupo grupo-list">
+                    <li class="grupo-list-item">
+                        <a id="boton7" class="btn btn-danger">Fade In</a>
+                        <a id="boton8" class="btn btn-warning">Fade Out</a>
+                        <a id="boton9" class="btn btn-success">Toggle</a>
+                    </li>
+                </ul>
+                <ul>
+                    <img id="imagen3" src="imagenes/matrix.jpg" class="imagen-top" alt="matrix">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="jquery.js"></script>
+
+    <script>
+        $("#boton1").click(function () {
+            $("#imagen1").show();
+        });
+        $("#boton2").click(function () {
+            $("#imagen1").hide();
+        });
+        $("#boton3").click(function () {
+            $("#imagen1").toggle();
+        });
+        $("#boton4").click(function () {
+            $("#imagen2").slideDown();
+        });
+        $("#boton5").click(function () {
+            $("#imagen2").slideUp();
+        });
+        $("#boton6").click(function () {
+            $("#imagen2").slideToggle();
+        });
+        $("#boton7").click(function () {
+            $("#imagen3").fadeIn();
+        });
+        $("#boton8").click(function () {
+            $("#imagen3").fadeOut();
+        });
+        $("#boton9").click(function () {
+            $("#imagen3").fadeToggle();
+        });
+    </script>
+</body>
+
+</html>
