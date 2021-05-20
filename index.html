@@ -88,6 +88,17 @@
         <a id="boton12" class="btn btn-secondary">Despues de ...</a>
     </div>
 
+    <div id="append" class="row mt-5 ">
+        <div class="col" ></div>
+        <a id="boton13" class="btn btn-success">Adjuntar ...</a>
+    </div>
+
+    <div id="prepend" class="row mt-5 ">
+        <div class="col" ></div>
+        <a id="boton14" class="btn btn-warning">Anteponiendo ...</a>
+    </div>
+</div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
@@ -132,15 +143,21 @@
             $("#before").before;
             $("#boton10").html("Vuelvo al Boton Anterior");
         });
-        // .after
+
         $("#boton12").click(function () {
             $("#after").after;
             $("#boton12").html("Vamos Adelante");
         });
-        // .append
 
-        // .html
+        $("#boton13").click(function () {
+            $("#append").append;
+            $("#boton13").html("Adjuntando Dato");
+        });
 
+        $("#boton14").click(function () {
+            $("#prepend").prepend;
+            $("#boton14").html("Anteponiendo Dato");
+        });
         // .attr
 
         // .val
